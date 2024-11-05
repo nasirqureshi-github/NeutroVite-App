@@ -21,7 +21,7 @@ app.use(express.json());
 app.use(cors(
   {
     origin: ["https://neutro-vite-frontend.vercel.app",
-             " https://neutrovite-admin.vercel.app"],
+             "https://neutrovite-admin.vercel.app"],
     methods: ["POST", "GET"],
     credentials: true
   }
