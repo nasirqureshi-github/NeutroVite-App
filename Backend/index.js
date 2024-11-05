@@ -18,7 +18,13 @@ const port= process.env.PORT || 4000;
 //middleware
 app.use(express.json());
 //access backend from frontend
-app.use(cors());
+app.use(cors(
+  {
+    origin: ["https://neutro-vite-frontend.vercel.app/"],
+    methods: ["POST", "GET"],
+    credentials: true
+  }
+));
 
 //database connection
 connectDB();
