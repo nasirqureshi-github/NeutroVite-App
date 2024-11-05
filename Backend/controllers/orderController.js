@@ -14,7 +14,7 @@ const placeOrder = async (req, res)=>{
     
     // const frontend_url="http://localhost:5173"
     
-    const frontend_url="http://localhost:5174"
+    const frontend_url="https://neutro-vite-frontend.vercel.app"
 
 try {
     const newOrder= new orderModel({

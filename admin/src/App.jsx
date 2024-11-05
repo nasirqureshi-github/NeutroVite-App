@@ -8,7 +8,7 @@ import Order from './pages/orders/Order'
 
 
 const App = () => {
-  const url='http://localhost:4000';
+  const url='https://neutrovite-backend.vercel.app';
   return (
     <div>
     <Navbar/>
