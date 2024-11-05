@@ -1,12 +1,15 @@
 {
-    "version": 2,
-    "builds": [
-      {"src": "./server.js", "use": "@vercel/node"}
-    ],
-    "routes": [
-      {
-        "src": "/(.*)",
-        "dest": "/"
-      }
-    ]
-  }
+  "version": 2,
+  "builds": [
+    {
+      "src": "backend/server.js", // Ensure path matches where server.js is located
+      "use": "@vercel/node"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/api/(.*)", // Routes all API requests to the backend
+      "dest": "backend/server.js"
+    }
+  ]
+}
