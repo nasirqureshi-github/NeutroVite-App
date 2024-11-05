@@ -58,6 +58,3 @@ res.send("api working");
 app.listen(port, (req,res)=>
     console.log(`server started on http://localhost:${port}`))
 
-//npm run server
-
-
