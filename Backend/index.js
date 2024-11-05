@@ -20,7 +20,7 @@ app.use(express.json());
 //access backend from frontend
 app.use(cors(
   {
-    origin: ["https://neutro-vite-frontend.vercel.app/"],
+    origin: ["https://neutro-vite-frontend.vercel.app"],
     methods: ["POST", "GET"],
     credentials: true
   }
